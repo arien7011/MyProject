@@ -1,0 +1,23 @@
+<div class="wrapper" >
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">code</th>
+        <th scope="col">name</th>
+        <th scope="col">gender</th>
+        <th scope="col">annualSalary</th>
+        <th scope="col">dateOfBirth</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let employee of Employees">
+        <td>{{employee.code}}</td>
+        <td>{{employee.name}}</td>
+        <td>{{employee.gender}}</td>
+        <td>{{employee.annualSalary}}</td>
+        <td>{{employee.dateOfBirth}}</td>
+        <span>Edit</span>
+      </tr>
+     </tbody>
+     |</table>
+    </div>

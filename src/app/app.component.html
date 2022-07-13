@@ -1,0 +1,51 @@
+<nav id="navcp" class="navbar bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: #000000;">
+            <img src="./assets/HeaderPrimary.jpg" alt="" width="30" height="24" class="d-inline-block">
+            <strong> Taazaa</strong>
+        </a>
+        <!-- <a  class="styling" class="btn btn-outline-light float-end" routerLink="compose" routerLinkActive="active"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+          </svg>Taazaa</a>
+        <form class="d-flex" role="search">
+            <input class="form-control m-2" type="search" placeholder="Search: username@example.com" aria-label="Search"
+                style="width: 669px;">
+            <button class="btn btn-outline-light m-2" type="submit">Search</button>
+        </form>
+        <a class="btn btn-outline-light float-end" routerLink="employee-list" routerLinkActive="active"><i class="fa fa-address-book"></i>Employees</a> -->
+    </div>
+</nav>
+<div id="align" class="container-fluid h-100 float-left">
+    <div class="row min-vh-100 flex-column flex-md-row h-100">
+        <aside class="col-12 col-md-2 p-0 bg-dark flex-shrink-1">
+            <nav class="navbar navbar-expand navbar-dark bg-dark flex-md-column flex-row align-items-start py-2">
+                <div class="h-100">
+                    <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+                        <li class="nav-item">
+                            <a class="nav-link pl-0 text-nowrap" routerLink="employee-list" routerLinkActive="active"><i
+                                    class="fa fa-paper-plane fa-2x"></i>
+                                <span class="font-weight-bold h5" style="margin-left: 5px;">Employees</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pl-0 text-nowrap" routerLink="/edit-employee" routerLinkActive="active"><i
+                                class="fa fa-user-circle fa-2x"></i>
+                                <span class="font-weight-bold h5" style="margin-left: 5px;">Edit</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+
+
+
+<app-employee-list></app-employee-list>
+<router-outlet></router-outlet>
+
+   
+
